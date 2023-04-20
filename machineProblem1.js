@@ -58,14 +58,11 @@ function gradeStudent(){
 
                 if (grade[i]>=90 && grade[i]<=100) {
                     letterGrade[i]='A';
-                    
-                    
+
                 }
                 else if (grade[i]>=80 && grade[i]<=89) {
                     letterGrade[i]='B';
                     
-                    
-
                 }
                 else if (grade[i]>=70 && grade[i]<=79) {
                     letterGrade[i]='C';
@@ -74,7 +71,6 @@ function gradeStudent(){
                 else if (grade[i]>=60 && grade[i]<=69){
                     letterGrade[i]='D';
                     
-                   
                 }
                 else if (grade[i]<=60){
                     letterGrade[i]='F';
@@ -83,21 +79,20 @@ function gradeStudent(){
                 else {
                     letterGrade[i]='-'
                 }
-                
         }
-    
 
-    for (j=0;j<inputStudents;j++){
-        let gradeTable =[
-            studentName[j],
-            classParGrade[j],
-            sumGrade[j],
-            mExam[j],
-            grade[j],
-            letterGrade[j],
-        ]
-        tableOutput.push(gradeTable);
+        for (j=0;j<inputStudents;j++){
+            let gradeTable =[
+                studentName[j],
+                classParGrade[j],
+                sumGrade[j],
+                mExam[j],
+                grade[j],
+                letterGrade[j],
+            ]
+            tableOutput.push(gradeTable);
     }
+
     console.log(tableOutput.toString());
     return;
 }
